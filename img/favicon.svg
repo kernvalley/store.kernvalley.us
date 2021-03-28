@@ -1,4 +1,14 @@
-<svg version="1.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-	<rect width="100" height="100" x="0" y="0" rx="6" ry="6" fill="#528ff9" />
-	<circle cx="50" cy="50" r="30" fill="#fafafa" />
+<?xml version="1.0" encoding="UTF-8"?>
+<svg version="1.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <rect width="100" height="100" rx="6" ry="6" fill="#008000"/>
+ <path d="m70.75 29.25h-41.5v5.1875h41.5zm2.5938 25.938v-5.1875l-2.5938-12.969h-41.5l-2.5938 12.969v5.1875h2.5938v15.563h25.938v-15.563h10.375v15.563h5.1875v-15.563zm-23.344 10.375h-15.563v-10.375h15.563z" fill="#f9f9f9" stroke-width="1.2969"/>
 </svg>
