@@ -45,15 +45,19 @@ collections:
   clothing:
     output: true
     permalink: /clothing/:name
+    layout: product
   souvenirs:
     output: true
     permalink: /souvenirs/:name
+    layout: product
   whiskeyflats:
     output: true
     permalink: /whiskey-flat-days/:name
+    layout: product
   derby:
     output: true
     permalink: /fishing-derby/:name
+    layout: product
 defaults:
   - scope:
       path: _clothing
@@ -61,17 +65,17 @@ defaults:
       layout: product
       index: true
   - scope:
-    path: _souvenirs
+      path: _souvenirs
     values:
       layout: product
       index: true
   - scope:
-    path: _whiskeyflats
+      path: _whiskeyflats
     values:
       layout: product
       index: true
   - scope:
-    path: _derby
+      path: _derby
     values:
       layout: product
       index: true

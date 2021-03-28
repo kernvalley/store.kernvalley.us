@@ -4,6 +4,15 @@ nav:
     href: /
   - label: Clothing
     href: /clothing/
+sidebar:
+  - label: Clothing
+    href: /clothing/
+  - label: Souvenirs
+    href: /souvenirs/
+  - label: Whiskey Flat days
+    href: /whiskey-flat-days/
+  - label: Fishing Derby
+    href: /derby/
 footer:
   - label: KernValley.US
     href: https://kernvalley.us

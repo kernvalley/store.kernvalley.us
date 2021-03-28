@@ -11,7 +11,8 @@ import 'https://cdn.kernvalley.us/components/install/prompt.js';
 import 'https://cdn.kernvalley.us/components/ad/block.js';
 import 'https://cdn.kernvalley.us/components/app/list-button.js';
 import 'https://cdn.kernvalley.us/components/app/stores.js';
-import { $, ready } from 'https://cdn.kernvalley.us/js/std-js/functions.js';
+import { ready } from 'https://cdn.kernvalley.us/js/std-js/dom.js';
+import { $ } from 'https://cdn.kernvalley.us/js/std-js/esQuery.js';
 import { init } from 'https://cdn.kernvalley.us/js/std-js/data-handlers.js';
 import { getCustomElement } from 'https://cdn.kernvalley.us/js/std-js/custom-elements.js';
 import { importGa, externalHandler, telHandler, mailtoHandler } from 'https://cdn.kernvalley.us/js/std-js/google-analytics.js';
@@ -61,8 +62,10 @@ Promise.allSettled([
 ]).then(() => {
 	init().catch(console.error);
 
-	$('#install-btn').click(async () => {
-		const HTMLInstallPromptElement = await getCustomElement('install-prompt');
-		await new HTMLInstallPromptElement().show();
+	customElements.whenDefined('install-prompt').then(() => {
+		$('#install-btn').click(async () => {
+			const HTMLInstallPromptElement = await getCustomElement('install-prompt');
+			await new HTMLInstallPromptElement().show();
+		}).then($btns => $btns.unhide()).catch(console.error);
 	});
 });

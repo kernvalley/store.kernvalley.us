@@ -1,10 +1,16 @@
 <aside id="sidebar" class="card shadow">
-	{% if include.pinned-posts %}{% include articles/pinned-posts.html count=layout.pinned-posts %}{% endif %}
+	<div class="card">
+		<h4>Categories</h4>
+		<ul>
+			{% for link in site.data.links.sidebar %}
+				<li><a href="{{ link.href }}" class="link nav-link underline">{{ link.label }}</a></li>
+			{% endfor %}
+		</ul>
+	</div>
 	{% if page.ads %}{% for ad in page.ads %}
 		{% include common/ad.html ad=ad content="sidebar" %}
 	{% endfor %}{% endif %}
 	{% for ad in site.data.ads.sidebar %}
 		{% include common/ad.html ad=ad content="sidebar" %}
 	{% endfor %}
-	{% if include.recent-posts %}{% include articles/recent-posts.html count=layout.recent-posts %}{% endif %}
 </aside>

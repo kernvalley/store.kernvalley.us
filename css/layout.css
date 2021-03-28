@@ -5,6 +5,10 @@
 @import url("./footer.css");
 @import url("https://cdn.kernvalley.us/css/core-css/layout/index.css");
 
+body {
+	overflow-x: hidden;
+}
+
 .content {
 	margin: 1.2em;
 	padding: 0.4em 1.4em;
