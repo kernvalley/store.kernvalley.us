@@ -41,47 +41,40 @@ icons: /img/icons.svg
 # webmaster-verifications:
 #   google:
 #   bing:
+collections:
+  clothing:
+    output: true
+    permalink: /clothing/:name
+  souvenirs:
+    output: true
+    permalink: /souvenirs/:name
+  whiskeyflats:
+    output: true
+    permalink: /whiskey-flat-days/:name
+  derby:
+    output: true
+    permalink: /fishing-derby/:name
 defaults:
   - scope:
-      path: _posts
+      path: _clothing
     values:
-      layout: post
-      author:
-        givenName: Chris
-        familyName: Zuber
-        url: 'https://shgysk8zer0.github.io'
-        gravatar: '43578597e449298f5488c2407c8a8ae5'
-        github: shgysk8zer0
-        twitter: shgysk8zer0
-        linkedin: chris-zuber-455346141/
-      publisher:
-        name: 'KernValley.US'
-        url: 'https://kernvalley.us'
-        logo:
-          url: 'https://kernvalley.us/img/icon-256.png'
-      permalink: /posts/:categories/:year/:month/:day/:title/
-      comments: true
-      ads: false
+      layout: product
       index: true
   - scope:
-      path: _drafts
+    path: _souvenirs
     values:
-      layout: post
-      author:
-        givenName: Chris
-        familyName: Zuber
-        url: 'https://shgysk8zer0.github.io'
-        gravatar: '43578597e449298f5488c2407c8a8ae5'
-        github: 'shgysk8zer0'
-        twitter: shgysk8zer0
-      publisher:
-        name: 'KernValley.US'
-        url: 'https://kernvalley.us'
-        logo:
-          url: 'https://kernvalley.us/img/icon-256.png'
-      permalink: /posts/:categories/:year/:month/:day/:title/
-      comments: false
-      ads: false
+      layout: product
+      index: true
+  - scope:
+    path: _whiskeyflats
+    values:
+      layout: product
+      index: true
+  - scope:
+    path: _derby
+    values:
+      layout: product
+      index: true
 plugins:
   - jekyll-gist
   - jekyll-youtube

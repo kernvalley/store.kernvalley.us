@@ -2,6 +2,8 @@ nav:
   - label: Home
     icon: home
     href: /
+  - label: Clothing
+    href: /clothing/
 footer:
   - label: KernValley.US
     href: https://kernvalley.us
