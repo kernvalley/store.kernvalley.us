@@ -25,7 +25,7 @@ const config = {
 		'https://cdn.kernvalley.us/components/share-to-button/share-to-button.css',
 		'https://cdn.kernvalley.us/components/slide-show/slide-show.css',
 		'https://cdn.kernvalley.us/components/github/user.css',
-		'https://cdn.kernvalley.us/components/pwa/prompt.css',
+		'https://cdn.kernvalley.us/components/install/prompt.css',
 		'https://unpkg.com/leaflet@1.7.1/dist/leaflet.css',
 
 		/* Data and JSON */
@@ -37,7 +37,7 @@ const config = {
 		'https://cdn.kernvalley.us/components/share-to-button/share-to-button.html',
 		'https://cdn.kernvalley.us/components/slide-show/slide-show.html',
 		'https://cdn.kernvalley.us/components/github/user.html',
-		'https://cdn.kernvalley.us/components/pwa/prompt.html',
+		'https://cdn.kernvalley.us/components/install/prompt.html',
 
 		/* Images & Icons */
 		'/img/icons.svg',
@@ -49,8 +49,9 @@ const config = {
 		'/img/favicon.svg',
 		'https://cdn.kernvalley.us/img/keep-kern-clean.svg',
 		'https://cdn.kernvalley.us/img/logos/play-badge.svg',
-		'https://cdn.kernvalley.us/img/logos/itunes-badge.svg',
-		'https://cdn.kernvalley.us/img/logos/windows-badge.svg',
+		'https://cdn.kernvalley.us/img/logos/pwa-badge.svg',
+		// 'https://cdn.kernvalley.us/img/logos/itunes-badge.svg',
+		// 'https://cdn.kernvalley.us/img/logos/windows-badge.svg',
 		'https://cdn.kernvalley.us/img/logos/instagram.svg',
 		'https://cdn.kernvalley.us/img/markers.svg',
 

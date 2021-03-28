@@ -1,21 +1,21 @@
-# [jekyll-template](https://infallible-galileo-ac41ee.netlify.app/)
-A template repository for Jekyll sites, including skeleton JS, CSS, SVGs, fonts, etc.
+# [store.kernvalley.us](https://store.kernvalley.us)
+Online store for Kern Valley souvenirs, clothing, etc.
 
-<!-- [![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=shgysk8zer0/jekyll-template)](https://dependabot.com) -->
-[![Node CI](https://github.com/shgysk8zer0/jekyll-template/workflows/Node%20CI/badge.svg)](https://github.com/shgysk8zer0/jekyll-template/actions)
-[![Super Linter](https://github.com/shgysk8zer0/jekyll-template/workflows/Lint%20Code%20Base/badge.svg)](https://github.com/shgysk8zer0/jekyll-template/actions?query=workflow%3A%22Lint+Code+Base%22)
+<!-- [![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=kernvalley/store.kernvalley.us)](https://dependabot.com) -->
+[![Node CI](https://github.com/kernvalley/store.kernvalley.us/workflows/Node%20CI/badge.svg)](https://github.com/kernvalley/store.kernvalley.us/actions)
+[![Super Linter](https://github.com/kernvalley/store.kernvalley.us/workflows/Lint%20Code%20Base/badge.svg)](https://github.com/kernvalley/store.kernvalley.us/actions?query=workflow%3A%22Lint+Code+Base%22)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/252539d1-4596-41e9-9d63-97a964822b25/deploy-status)](https://app.netlify.com/sites/infallible-galileo-ac41ee/deploys)
 
-[![GitHub license](https://img.shields.io/github/license/shgysk8zer0/jekyll-template.svg)](https://github.com/shgysk8zer0/jekyll-template/blob/master/LICENSE)
-[![GitHub issues](https://img.shields.io/github/issues/shgysk8zer0/jekyll-template.svg)](https://github.com/shgysk8zer0/jekyll-template/issues)
-[![GitHub pull requests](https://img.shields.io/github/issues-pr/shgysk8zer0/jekyll-template.svg)](https://github.com/shgysk8zer0/jekyll-template/pulls)
-[![GitHub last commit](https://img.shields.io/github/last-commit/shgysk8zer0/jekyll-template.svg)](https://github.com/shgysk8zer0/jekyll-template/commits/master)
-[![GitHub release](https://img.shields.io/github/release/shgysk8zer0/jekyll-template.svg)](https://github.com/shgysk8zer0/jekyll-template/releases)
+[![GitHub license](https://img.shields.io/github/license/kernvalley/store.kernvalley.us.svg)](https://github.com/kernvalley/store.kernvalley.us/blob/master/LICENSE)
+[![GitHub issues](https://img.shields.io/github/issues/kernvalley/store.kernvalley.us.svg)](https://github.com/kernvalley/store.kernvalley.us/issues)
+[![GitHub pull requests](https://img.shields.io/github/issues-pr/kernvalley/store.kernvalley.us.svg)](https://github.com/kernvalley/store.kernvalley.us/pulls)
+[![GitHub last commit](https://img.shields.io/github/last-commit/kernvalley/store.kernvalley.us.svg)](https://github.com/kernvalley/store.kernvalley.us/commits/master)
+[![GitHub release](https://img.shields.io/github/release/kernvalley/store.kernvalley.us.svg)](https://github.com/kernvalley/store.kernvalley.us/releases)
 
-![GitHub followers](https://img.shields.io/github/followers/shgysk8zer0.svg?style=social)
-![GitHub forks](https://img.shields.io/github/forks/shgysk8zer0/jekyll-template.svg?style=social)
-![GitHub stars](https://img.shields.io/github/stars/shgysk8zer0/jekyll-template.svg?style=social)
-[![Twitter Follow](https://img.shields.io/twitter/follow/shgysk8zer0.svg?style=social)](https://twitter.com/shgysk8zer0)
+![GitHub followers](https://img.shields.io/github/followers/kernvalley.svg?style=social)
+![GitHub forks](https://img.shields.io/github/forks/kernvalley/store.kernvalley.us.svg?style=social)
+![GitHub stars](https://img.shields.io/github/stars/kernvalley/store.kernvalley.us.svg?style=social)
+[![Twitter Follow](https://img.shields.io/twitter/follow/kern_valley.svg?style=social)](https://twitter.com/shgysk8zer0)
 
 [![Donate using Liberapay](https://img.shields.io/liberapay/receives/shgysk8zer0.svg?logo=liberapay)](https://liberapay.com/shgysk8zer0/donate "Donate using Liberapay")
 ![Keybase BTC](https://img.shields.io/keybase/btc/shgysk8zer0.svg)
@@ -37,4 +37,4 @@ A template repository for Jekyll sites, including skeleton JS, CSS, SVGs, fonts,
 - Built-in testing via GitHub Actions, eslint, and stylelint
 - Always up-to-date thanks to preset Dependabot-v2 config
 - Setup for quick deployment to Netlify
-- Version files for Ruby and NodeJS (`.rvmrc`, `.ruby-version`, and `.nvmrc`)
+- Version files for Ruby and NodeJS (`.ruby-version`, and `.nvmrc`)

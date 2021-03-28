@@ -19,6 +19,17 @@
   crossOrigin: anonymous
   referrerPolicy: no-referrer
   importance: high
+- href: https://cdn.kernvalley.us/components/install/prompt.html
+  as: fetch
+  type: text/html
+  referrerPolicy: no-referrer
+  crossOrigin: anonymous
+  importance: low
+- href: https://cdn.kernvalley.us/components/install/prompt.css
+  as: style
+  referrerPolicy: no-referrer
+  crossOrigin: anonymous
+  importance: low
 - href: https://cdn.kernvalley.us/components/ad/block.css
   as: style
   type: text/css

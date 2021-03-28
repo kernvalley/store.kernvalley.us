@@ -1,14 +1,14 @@
-name: Jekyll Template
-shortName: Jekyll Template
-version: 1.3.0
+name: Kern Valley Store
+shortName: KRV Store
+version: 1.0.0
 lang: en
 dir: ltr
 display: standalone
 orientation: any
-description: "A GitHub repository for easily creating fast, modern, PWA compatible websites"
+description: Online store for Kern Valley souvenirs, clothing, etc.
 icons-file: /img/icons.svg
 theme:
-  color: '#007bff'
+  color: '#008000'
   background: '#242424'
 icons:
   - src: /img/favicon.svg
@@ -109,7 +109,7 @@ share_target:
 # iarc_rating_id:
 related_applications:
   - platform: webapp
-    url: /manifest.json
+    url: https://store.kernvalley.us/manifest.json
   # - platform: play
   #   id: "twa.weather.kernvalley"
   #   url: "#"
@@ -128,7 +128,7 @@ features:
   - Built-in testing via GitHub Actions, eslint, and stylelint
   - Always up-to-date thanks to preset Dependabot-v2 config
   - Setup for quick deployment to Netlify
-  - Version files for Ruby and NodeJS (.rvmrc, .ruby-version, and .nvmrc)
+  - Version files for Ruby and NodeJS (.ruby-version, and .nvmrc)
 # https://github.com/w3c/manifest/wiki/Categories
 categories:
   - business
