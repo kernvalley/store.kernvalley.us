@@ -7,5 +7,12 @@ export const env = (location.hostname === 'localhost' || location.hostname.endsW
 export const dev = env === 'development';
 
 export const site = {
-	title: 'Jekyll Template',
+	title: 'Kern Valley Store',
 };
+
+export const storePages = [
+	'clothing',
+	'souvenirs',
+	'whiskeyflats',
+	'derby',
+];

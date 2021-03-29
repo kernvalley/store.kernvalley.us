@@ -4,6 +4,9 @@ nav:
     href: /
   - label: Clothing
     href: /clothing/
+  - label: Checkout
+    href: /checkout/
+    icon: store
 sidebar:
   - label: Clothing
     href: /clothing/

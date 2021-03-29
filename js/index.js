@@ -11,12 +11,14 @@ import 'https://cdn.kernvalley.us/components/install/prompt.js';
 import 'https://cdn.kernvalley.us/components/ad/block.js';
 import 'https://cdn.kernvalley.us/components/app/list-button.js';
 import 'https://cdn.kernvalley.us/components/app/stores.js';
+import 'https://cdn.kernvalley.us/components/shopping-cart.js';
 import { ready } from 'https://cdn.kernvalley.us/js/std-js/dom.js';
 import { $ } from 'https://cdn.kernvalley.us/js/std-js/esQuery.js';
 import { init } from 'https://cdn.kernvalley.us/js/std-js/data-handlers.js';
 import { getCustomElement } from 'https://cdn.kernvalley.us/js/std-js/custom-elements.js';
 import { importGa, externalHandler, telHandler, mailtoHandler } from 'https://cdn.kernvalley.us/js/std-js/google-analytics.js';
 import { GA } from './consts.js';
+import { ShoppingCart } from 'https://cdn.kernvalley.us/js/std-js/ShoppingCart.js';
 
 $(':root').css({'--viewport-height': `${window.innerHeight}px`});
 
@@ -68,4 +70,18 @@ Promise.allSettled([
 			await new HTMLInstallPromptElement().show();
 		}).then($btns => $btns.unhide()).catch(console.error);
 	});
+
+	const $purchase = $('.purchase-btn');
+
+	if ($purchase.found) {
+		const cart = new ShoppingCart();
+		$purchase.click(async function() {
+			await cart.addItem({
+				uuid: this.id,
+				name: this.dataset.label,
+				price: parseFloat(this.dataset.price),
+				quantity: 1,
+			}).catch(err => alert(err));
+		});
+	}
 });
