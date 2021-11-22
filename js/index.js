@@ -7,10 +7,10 @@ import 'https://cdn.kernvalley.us/components/slide-show/slide-show.js';
 import 'https://cdn.kernvalley.us/components/github/user.js';
 import 'https://cdn.kernvalley.us/components/current-year.js';
 import 'https://cdn.kernvalley.us/components/bacon-ipsum.js';
-import 'https://cdn.kernvalley.us/components/pwa/install.js';
 import 'https://cdn.kernvalley.us/components/ad/block.js';
 import 'https://cdn.kernvalley.us/components/app/list-button.js';
 import 'https://cdn.kernvalley.us/components/app/stores.js';
+import 'https://cdn.kernvalley.us/components/install/prompt.js';
 import { $, ready } from 'https://cdn.kernvalley.us/js/std-js/functions.js';
 import { init } from 'https://cdn.kernvalley.us/js/std-js/data-handlers.js';
 import { importGa, externalHandler, telHandler, mailtoHandler } from 'https://cdn.kernvalley.us/js/std-js/google-analytics.js';
@@ -60,6 +60,11 @@ Promise.allSettled([
 	ready(),
 ]).then(() => {
 	init().catch(console.error);
+
+	customElements.whenDefined('install-prompt').then(() => {
+		const InstallPrompt = customElements.get('install-prompt');
+		document.getElementById('install-btn').addEventListener('click', () => new InstallPrompt().show());
+	});
 
 	if (location.pathname.startsWith('/contact')) {
 		$('#contact-form').submit(submitHandler);
