@@ -63,7 +63,9 @@ Promise.allSettled([
 
 	customElements.whenDefined('install-prompt').then(() => {
 		const InstallPrompt = customElements.get('install-prompt');
-		document.getElementById('install-btn').addEventListener('click', () => new InstallPrompt().show());
+		const install = document.getElementById('install-btn');
+		install.addEventListener('click', () => new InstallPrompt().show());
+		install.hidden = false;
 	});
 
 	if (location.pathname.startsWith('/contact')) {
